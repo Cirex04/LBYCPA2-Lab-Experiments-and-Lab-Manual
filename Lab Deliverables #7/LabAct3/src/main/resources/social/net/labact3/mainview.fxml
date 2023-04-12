@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane prefHeight="441.0" prefWidth="616.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="social.net.labact3.Controller">
+    <top>
+        <HBox alignment="TOP_CENTER" prefHeight="31.0" prefWidth="606.0" spacing="4.0" BorderPane.alignment="CENTER">
+            <effect>
+                <InnerShadow />
+            </effect>
+            <children>
+                <Label text="Name:">
+                    <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                    </HBox.margin>
+                </Label>
+                <TextField fx:id="nameField" />
+                <Button mnemonicParsing="false" onAction="#handleAdd" text="Add">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <Button mnemonicParsing="false" onAction="#handleLookup" text="Lookup">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            </children>
+            <BorderPane.margin>
+                <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+            </BorderPane.margin>
+            <padding>
+                <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+            </padding>
+        </HBox>
+    </top>
+    <left>
+        <VBox alignment="CENTER" prefHeight="358.0" prefWidth="125.0" spacing="12.0" BorderPane.alignment="CENTER_LEFT">
+            <children>
+                <Button mnemonicParsing="false" onAction="#handlePicture" text="Change Picture">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <TextField fx:id="statusChangeLabel" />
+                <Button mnemonicParsing="false" onAction="#handleStatus" text="Change Status">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <TextField fx:id="unfriendLabel" />
+                <Button mnemonicParsing="false" onAction="#handleUnfriend" text="Unfriend">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+                <TextField fx:id="quoteLabel" />
+                <Button mnemonicParsing="false" onAction="#handleQuote" text="Change Quote">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            </children>
+            <effect>
+                <InnerShadow />
+            </effect>
+        </VBox>
+    </left>
+    <center>
+        <AnchorPane prefHeight="358.0" prefWidth="491.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label fx:id="name" layoutX="23.0" layoutY="8.0" prefHeight="38.0" prefWidth="154.0" text="FirstName LastName" />
+                <Label fx:id="favQuote" layoutX="165.0" layoutY="297.0" prefHeight="17.0" prefWidth="103.0" text="Favourite Quote" />
+                <Label layoutX="224.0" layoutY="5.0" prefHeight="37.0" prefWidth="94.0" text="Friends:" />
+                <ListView fx:id="listView" layoutX="218.0" layoutY="37.0" prefHeight="200.0" prefWidth="200.0" />
+                <Label fx:id="statusLabel" layoutX="147.0" layoutY="368.0" prefHeight="17.0" prefWidth="252.0" text="status message" />
+            <VBox layoutX="23.0" layoutY="46.0" prefHeight="119.0" prefWidth="122.0">
+               <children>
+                      <ImageView fx:id="pictureView" fitHeight="125.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                          <image>
+                              <Image url="@images/placeholder/unknown.png" />
+                          </image>
+                      </ImageView>
+                      <Label fx:id="statusProf" prefHeight="17.0" prefWidth="114.0" text="current status" />
+               </children>
+            </VBox>
+            </children>
+        </AnchorPane>
+    </center>
+</BorderPane>
