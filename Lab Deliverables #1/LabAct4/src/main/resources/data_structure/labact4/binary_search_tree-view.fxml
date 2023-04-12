@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A phonebook directory is a good analogy for a binary search tree. Just as a phonebook is organized&#10;alphabetically with a specific ordering of names, a binary search tree is organized by a specific&#10;ordering of its elements, usually by value. The phonebook's organization allows for efficient searching,&#10;just as a binary search tree allows for efficient searching of its elements. Additionally, just as new&#10;entries can be added and existing entries can be removed from a phonebook, elements can be&#10;inserted and deleted from a binary search tree." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BEIGE" height="193.0" layoutX="255.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#fdaebe" height="193.0" layoutX="243.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <SVGPath content="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" layoutX="282.0" layoutY="115.0" scaleX="3.0" scaleY="3.0" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

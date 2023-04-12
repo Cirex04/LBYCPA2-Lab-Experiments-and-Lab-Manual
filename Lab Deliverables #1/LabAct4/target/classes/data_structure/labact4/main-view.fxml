@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.MainViewController">
+   <children>
+      <Button fx:id="static_array_button" layoutX="261.0" layoutY="35.0" mnemonicParsing="false" onAction="#static_array" text="Static Array">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="252.0" layoutY="80.0" mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="244.0" layoutY="119.0" mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="242.0" layoutY="163.0" mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="276.0" layoutY="206.0" mnemonicParsing="false" onAction="#stack" text="Stack">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="274.0" layoutY="250.0" mnemonicParsing="false" onAction="#queue" text="Queue">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="241.0" layoutY="296.0" mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button layoutX="260.0" layoutY="340.0" mnemonicParsing="false" onAction="#hash_table" text="Hash Table">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

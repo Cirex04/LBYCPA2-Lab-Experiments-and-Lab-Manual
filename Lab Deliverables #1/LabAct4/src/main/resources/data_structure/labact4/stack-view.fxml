@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Ellipse?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A stack of plates in a dishwashing can be thought of as a stack data structure because it follows the Last In,&#10;First Out (LIFO) principle. Just as in a stack data structure, the last plate added to the stack is the first one&#10;to be removed, in the dishwashing, the last plate added to the stack is the first one to be washed. &#10;Additionally, just as in a stack data structure, only the top plate or element can be accessed or removed&#10; in the dishwashing, only the top plate can be accessed and washed without disturbing the rest of the&#10;stack. The analogy of a stack of plates in a dishwashing helps to visualize the basic operations of a&#10;stack data structure such as push and pop, as well as its properties like being a LIFO structure." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="193.0" radiusX="97.0" radiusY="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="193.0" radiusX="53.0" radiusY="16.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="177.0" radiusX="97.0" radiusY="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="177.0" radiusX="53.0" radiusY="16.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="161.0" radiusX="97.0" radiusY="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="161.0" radiusX="53.0" radiusY="16.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="145.0" radiusX="97.0" radiusY="28.0" stroke="BLACK" strokeType="INSIDE" />
+            <Ellipse fill="LIGHTGRAY" layoutX="300.0" layoutY="145.0" radiusX="53.0" radiusY="16.0" stroke="BLACK" strokeType="INSIDE" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

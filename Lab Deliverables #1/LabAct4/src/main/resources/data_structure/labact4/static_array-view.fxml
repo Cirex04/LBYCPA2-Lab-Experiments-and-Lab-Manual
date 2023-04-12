@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.StaticArrayController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Navigate">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#926f22" height="162.0" layoutX="-3.0" stroke="BLACK" strokeType="INSIDE" width="303.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#926f22" height="162.0" layoutX="300.0" stroke="BLACK" strokeType="INSIDE" width="303.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BEIGE" height="148.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="53.0" />
+            <Label layoutX="-2.0" layoutY="79.0" rotate="-90.0" text="Harry Potter">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="GOLD" height="148.0" layoutX="91.0" layoutY="7.0" rotate="159.5" stroke="BLACK" strokeType="INSIDE" width="53.0" />
+            <Label layoutX="56.0" layoutY="72.0" rotate="-112.2" text="Catcher in the Rye">
+               <font>
+                  <Font name="Georgia" size="15.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DARKRED" height="148.0" layoutX="409.0" layoutY="57.0" rotate="-90.0" stroke="BLACK" strokeType="INSIDE" width="53.0" />
+            <Label layoutX="391.0" layoutY="116.0" text="Prodigy" textFill="GOLD">
+               <font>
+                  <Font name="Georgia" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+   <bottom>
+      <TextArea editable="false" prefHeight="162.0" prefWidth="600.0" text="A bookshelf is a good analogy for a static array data structure because both have a fixed size, a specific order,&#10;and similar basic operations like access, search, insert and delete items. Both can be used to store and organize&#10;a set of items in a specific order.&#10;The books on a bookshelf can be accessed and searched for by their position, just like elements in a static array &#10;can be accessed and searched for by their index." BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>

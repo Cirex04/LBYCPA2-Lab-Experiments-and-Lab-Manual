@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.shape.SVGPath?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar prefHeight="29.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A deck of cards can be a good analogy for a doubly linked list data structure. Each card in the deck can&#10;represent a node in the doubly linked list, with each card having pointers to the previous and next card.&#10;This allows for easy insertion and deletion of cards in the middle of the deck, similar to how nodes&#10;can be inserted and deleted in a doubly linked list. Additionally, just as a doubly linked list allows&#10;for traversing the list in both directions, a deck of cards can also be easily shuffled or traversed in&#10;both directions." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="201.0" prefWidth="508.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="206.0" layoutX="206.0" layoutY="15.0" stroke="BLACK" strokeType="INSIDE" width="159.0" />
+                  <SVGPath content="M160,232H96l8.7-46.2A52.1,52.1,0,0,1,28,140C28,88,128,24,128,24S228,88,228,140a52.1,52.1,0,0,1-76.7,45.8Z" layoutX="157.0" layoutY="-1.0" scaleX="0.25" scaleY="0.25" />
+                  <Label layoutX="336.0" layoutY="166.0" prefHeight="38.0" prefWidth="21.0" rotate="180.0" text="A">
+                     <font>
+                        <Font name="Gabriola" size="44.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="215.0" layoutY="15.0" prefHeight="38.0" prefWidth="21.0" text="A">
+                     <font>
+                        <Font name="Gabriola" size="44.0" />
+                     </font>
+                  </Label>
+                  <SVGPath content="M160,232H96l8.7-46.2A52.1,52.1,0,0,1,28,140C28,88,128,24,128,24S228,88,228,140a52.1,52.1,0,0,1-76.7,45.8Z" layoutX="219.0" layoutY="25.0" rotate="180.0" scaleX="0.15" scaleY="0.15" />
+                  <SVGPath content="M160,232H96l8.7-46.2A52.1,52.1,0,0,1,28,140C28,88,128,24,128,24S228,88,228,140a52.1,52.1,0,0,1-76.7,45.8Z" layoutX="98.0" layoutY="-43.0" scaleX="0.15" scaleY="0.15" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

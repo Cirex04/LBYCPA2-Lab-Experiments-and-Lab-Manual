@@ -1,0 +1,14 @@
+                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+                        Worst-Case Time Complexity Table
+                        by: Calee Jann Mangunay, LBYCPA2-EQ2
+                    @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+Data Structure        Access    Search    Insert   Delete
+Static Array        |  O(1)   |   O(n)  |   x    |   x
+Dynamic Array       |  O(1)   |   O(n)  |   O(n) |  O(n)
+Singly-Linked List  |  O(n)   |   O(n)  |   O(1) |  O(1)
+Doubly-Linked List  |  O(n)   |   O(n)  |   O(1) |  O(1)
+Stack               |  O(n)   |   O(n)  |   O(1) |  O(1)
+Queue               |  O(n)   |   O(n)  |   O(1) |  O(1)
+Binary Search       |  O(n)   |   O(n)  |   O(n) |  O(n)
+Tree                |  O(n)   |   O(n)  |   O(n) |  O(n)
+Hash Table          |  N/A    |   O(n)  |   O(n) |  O(n)

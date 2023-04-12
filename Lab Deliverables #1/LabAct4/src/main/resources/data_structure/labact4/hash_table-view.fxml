@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A dictionary is a good analogy for a hash table data structure because, like a hash table, a dictionary uses a&#10;key-value pair to store and retrieve data efficiently. In a hash table, the key is used to index the location of&#10;the value in the table, while in a dictionary, the key is used to look up the definition of a word. Both data&#10;structures use a specific algorithm to map the key to its corresponding value, making the retrieval process&#10;very fast. Additionally, both a dictionary and a hash table can handle a large amount of data, making it easy&#10;to add, remove, or update items." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BEIGE" height="193.0" layoutX="255.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#964b00" height="193.0" layoutX="243.0" layoutY="30.0" stroke="BLACK" strokeType="INSIDE" width="102.0" />
+            <Label layoutX="250.0" layoutY="107.0" text="Dictionary" textFill="GAINSBORO">
+               <font>
+                  <Font name="Gabriola" size="27.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

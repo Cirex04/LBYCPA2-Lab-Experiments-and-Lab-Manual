@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#dynamic_array" text="Dynamic Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A line at a ticket counter is a good analogy for a queue data structure because, just like in a queue, people&#10;waiting in line follow a first-in, first-out rule. The person who arrives first will be served first and so on.&#10;Additionally, similar to how a queue data structure only allows insertion at the back and deletion at the&#10;front, at a ticket counter, new customers can only join the line at the back and can only be served at the&#10;front. This analogy helps to understand the basic principles of how a queue operates." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fill="#9c7248" layoutX="265.0" layoutY="88.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e8beac" layoutX="205.0" layoutY="88.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fill="#e8beac" layoutX="322.0" layoutY="88.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="41.0" endY="-39.00000762939453" layoutX="164.0" layoutY="149.0" startX="41.0" startY="2.1999969482421875" strokeWidth="2.0" />
+            <Line endX="41.0" endY="-39.00000762939453" layoutX="224.0" layoutY="150.0" startX="41.0" startY="2.1999969482421875" strokeWidth="2.0" />
+            <Line endX="41.0" endY="-39.00000762939453" layoutX="281.0" layoutY="149.0" startX="41.0" startY="2.1999969482421875" strokeWidth="2.0" />
+            <Line endX="19.20001220703125" endY="-7.62939453125E-6" layoutX="204.0" layoutY="125.0" startX="-16.0" startY="-7.62939453125E-6" />
+            <Line endX="19.20001220703125" endY="-7.62939453125E-6" layoutX="264.0" layoutY="125.0" startX="-16.0" startY="-7.62939453125E-6" />
+            <Line endX="19.20001220703125" endY="-7.62939453125E-6" layoutX="321.0" layoutY="124.0" startX="-16.0" startY="-7.62939453125E-6" />
+            <Line endX="2.79998779296875" endY="26.999984741210938" layoutX="338.0" layoutY="153.0" startX="-16.0" startY="-7.62939453125E-6" />
+            <Line endX="-15.0" endY="10.599990844726562" layoutX="327.0" layoutY="167.0" startX="-5.0" startY="-14.800003051757812" />
+            <Line endX="-17.20001220703125" endY="9.999984741210938" layoutX="274.0" layoutY="166.0" startX="-10.0" startY="-12.800003051757812" />
+            <Line endX="-4.5999755859375" endY="24.199996948242188" layoutX="283.0" layoutY="151.0" startX="-17.0" startY="2.1999969482421875" />
+            <Line endX="-4.5999755859375" endY="24.199996948242188" layoutX="224.0" layoutY="151.0" startX="-18.0" startY="1.1999969482421875" />
+            <Line endX="-4.4000244140625" endY="17.999984741210938" layoutX="198.0" layoutY="154.0" startX="6.0" startY="-1.8000030517578125" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="219.0" layoutX="396.0" layoutY="7.0" stroke="BLACK" strokeType="INSIDE" width="107.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="167.0" layoutX="407.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIME" height="167.0" layoutX="474.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="19.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="BLUE" height="77.0" layoutX="423.0" layoutY="55.0" stroke="BLACK" strokeType="INSIDE" width="54.0" />
+            <Circle fill="#e8beac" layoutX="450.0" layoutY="94.0" radius="22.0" stroke="BLACK" strokeType="INSIDE" />
+            <Line endX="159.0" endY="-43.00000762939453" layoutX="291.0" layoutY="159.0" startX="159.0" startY="-27.000015258789062" strokeWidth="2.0" />
+            <Label layoutX="405.0" layoutY="14.0" text="Ticket Booth" textFill="YELLOW">
+               <font>
+                  <Font name="Gabriola" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

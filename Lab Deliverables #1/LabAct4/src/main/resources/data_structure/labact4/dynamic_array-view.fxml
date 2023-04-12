@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.SVGPath?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="data_structure.labact4.DynamicArrayViewController">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+         <menus>
+            <Menu mnemonicParsing="false" text="File">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#exit_prog" text="Close" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Navigate">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#main_view" text="Home" />
+                  <MenuItem mnemonicParsing="false" onAction="#static_array" text="Static Array" />
+                  <MenuItem mnemonicParsing="false" onAction="#singly_linked_list" text="Singly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#doubly_linked_list" text="Doubly-Linked List" />
+                  <MenuItem mnemonicParsing="false" onAction="#stack" text="Stack" />
+                  <MenuItem mnemonicParsing="false" onAction="#queue" text="Queue" />
+                  <MenuItem mnemonicParsing="false" onAction="#binary_search_tree" text="Binary Search Tree" />
+                  <MenuItem mnemonicParsing="false" onAction="#hash_table" text="Hash Table" />
+               </items>
+            </Menu>
+         </menus>
+      </MenuBar>
+   </top>
+   <bottom>
+      <TextArea editable="false" prefHeight="121.0" prefWidth="600.0" text="A shopping cart is a good analogy for a dynamic array data structure because, like a dynamic array, a shopping&#10;cart can have items added and removed as needed. The capacity of the cart can also increase or decrease&#10;depending on the number of items in it, similar to how a dynamic array can resize itself. Additionally, items can&#10;be easily accessed or searched for by their position in the cart, similar to how elements in an array can be&#10;accessed by their index." BorderPane.alignment="CENTER" />
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="242.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <SVGPath content="M10,10 L50,10 60,30 40,50 Z" fill="WHITE" layoutX="248.0" layoutY="106.0" rotate="117.9" scaleX="2.0" scaleY="2.5" stroke="BLACK" />
+            <Line endX="55.4000244140625" endY="-1.52587890625E-5" layoutX="275.0" layoutY="148.0" startX="-29.4000244140625" startY="-1.52587890625E-5" strokeWidth="2.0" />
+            <Line endX="-25.4000244140625" endY="-34.79999542236328" layoutX="285.0" layoutY="158.0" startX="-17.79998779296875" startY="21.999984741210938" strokeWidth="2.0" />
+            <Line endX="-19.0" endY="-32.400001525878906" layoutX="302.0" layoutY="153.0" startX="-19.0" startY="29.199996948242188" strokeWidth="2.0" />
+            <Line endX="-1.79998779296875" endY="-46.400001525878906" layoutX="313.0" layoutY="164.0" startX="-13.79998779296875" startY="19.999984741210938" strokeWidth="2.0" />
+            <Line endX="-58.5999755859375" endY="-87.19998931884766" layoutX="421.0" layoutY="184.0" startX="-123.4000244140625" startY="36.80000305175781" strokeWidth="2.0" />
+            <Line endX="-29.4000244140625" endY="-98.61420440673828" layoutX="431.0" layoutY="194.0" startX="-67.185791015625" startY="-98.61420440673828" strokeWidth="2.0" />
+            <Line endX="-29.4000244140625" endY="-98.61420440673828" layoutX="330.0" layoutY="320.0" startX="-72.4000244140625" startY="-98.61421203613281" strokeWidth="2.0" />
+            <Circle layoutX="263.0" layoutY="229.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle layoutX="298.0" layoutY="229.0" radius="7.0" stroke="BLACK" strokeType="INSIDE" />
+         </children></AnchorPane>
+   </center>
+</BorderPane>
